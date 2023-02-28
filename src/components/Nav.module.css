@@ -39,7 +39,7 @@ nav > button {
   background-color: rgba(255, 255, 255, 0.07);
   backdrop-filter: blur(5px);
   width: 50px;
-
+  z-index: 19;
   border-radius: 0px 0px 10px 10px;
   border: 1px solid var(--grey);
   color: white;
@@ -60,6 +60,9 @@ nav > button {
 }
 
 @media (max-width: 600px) {
+    .nav {
+        background-color: #1E1E1E;
+    }
   .nav.active {
     transform: translateX(-50%) translateY(-93px);
   }

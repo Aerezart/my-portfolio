@@ -8,15 +8,26 @@
 .blocks:last-child {
   position: relative;
 }
+.blocks:first-child:after {
+  position: absolute;
+  content: "";
+  right: 0;
+  left: 0;
+  top: -400px;
+  width: 100%;
+  background-color: var(--main-color);
+  height: 400px;
+  z-index: 100;
+}
 .blocks:last-child:after {
   position: absolute;
   content: "";
   right: 0;
   left: 0;
-  bottom: -100px;
+  bottom: -400px;
   width: 100%;
   background-color: var(--main-color);
-  height: 100px;
+  height: 400px;
   z-index: 100;
 }
 

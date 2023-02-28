@@ -286,6 +286,7 @@ margin-bottom: 20px;
 	}
 	p, a{
 		font-size: var(--p-font-size-tablet);
+		line-height: 20px ;
 	}
 	.border--radius{
 		border-radius: var(--border-radius-tablet);
@@ -313,6 +314,7 @@ margin-bottom: 20px;
 	}
 	h2, .h2{
 		font-size: var(--h2-font-size-mobile);
+		line-height: 29px ;
 	}
 	h3, .h3{
 		font-weight: 600;
@@ -320,6 +322,7 @@ margin-bottom: 20px;
 	}
 	p, a{
 		font-size: var(--p-font-size-mobile);
+		line-height: 17px ;
 	}
 	.border--radius{
 		border-radius: var(--border-radius-mobile);

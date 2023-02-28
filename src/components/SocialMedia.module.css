@@ -11,7 +11,7 @@
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
   padding: 0px 15px;
   width: max-content;
-  margin: 20px 20px;
+  margin: 20px 20px 20px 0px;
   height: 60px;
   border: 1px solid var(--grey);
 }
@@ -69,4 +69,21 @@
 }
 .social > *:nth-child(2) {
   margin: 0px 25px;
+}
+
+@media(max-width:700px){
+    .cv {
+        height: 40px;
+        width: 120px;
+    }
+    .social{
+        height: 40px;
+    }
+    .cv p {
+        margin: 0px 10px 0px 0px;
+        font-size: 18px;
+      }
+      .social > * {
+        font-size: 20px;
+      }
 }

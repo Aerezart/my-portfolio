@@ -42,8 +42,8 @@
   box-shadow: 0 5px 20px rgba(0 0 0/40%);
 }
 .art .slick-slide > div > div {
-  max-width: 320px;
-  height: 380px;
+  max-width: 200px;
+  height: 250px;
   padding: 0px;
   margin: 0px auto;
   display: block !important;

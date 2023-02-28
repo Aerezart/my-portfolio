@@ -54,9 +54,10 @@
 }
 @media (max-width: 1000px) {
   .see_more {
-    margin: 30px auto 20px auto;
+    margin: 20px auto 10px auto;
     display: inline-block;
     position: relative;
+    padding: 10px 30px;
     left: 50%;
     width: auto;
     transform: translate(-50%);

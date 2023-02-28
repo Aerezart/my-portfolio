@@ -27,15 +27,15 @@ const Skills = () => {
   const skillsContent = (
     <div className={classes.skills_flex}>
       <div>
-        <h3 className="comment">\/\/Programming</h3>
+        <h3 className="comment">//Programming</h3>
         <p>HTML, CSS, JS, React, PHP, Wordpress, Woocommerce</p>
       </div>
       <div>
-        <h3 className="comment">\/\/Design & Art</h3>
+        <h3 className="comment">//Design & Art</h3>
         <p>Blender3D, Adobe Photoshop, Adobe Illustrator, Substance Painter</p>
       </div>
       <div>
-        <h3 className="comment">\/\/Languages</h3>
+        <h3 className="comment">//Languages</h3>
         <div>
           <p>
             English<span>(</span>
@@ -61,7 +61,7 @@ const Skills = () => {
       {windowSize[0] <= 800 ? <SkillsSlider /> : skillsContent}
 
       <Spacer />
-      <Title functionLeft={"::("} functionRight={")"}>Time in Web Development</Title>
+      <Title functionLeft={"::("} functionRight={")"}>Experience</Title>
 
       <h3 className={classes.time_in_dev}>
         const <span>timeInDevelopment</span> ={" "}
