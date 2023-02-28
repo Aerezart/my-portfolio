@@ -1,0 +1,61 @@
+.projects_flex,
+.projects_flex_react {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.projects_flex > a {
+  display: block;
+  width: calc(50% - 10px);
+  box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.6);
+  border-radius: 10px;
+  transition: 0.3s;
+  padding: 0px 20px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid var(--grey);
+}
+.full_width > a {
+  width: 100%;
+}
+.projects_flex > a * {
+  margin-bottom: 0px;
+}
+.projects_flex > a:hover {
+  box-shadow: inset 0 0 20px rgba(0, 0, 0, 0), 0 0 20px rgba(0, 0, 0, 0.3);
+}
+.projects_flex > a p {
+  padding: 20px 0px;
+}
+.projects_flex > a > p {
+  padding-right: 20px;
+  border-right: 1px solid var(--grey);
+}
+.projects_flex > a > div {
+  flex: 1;
+  text-align: center;
+}
+
+.disabled {
+  pointer-events: none;
+  opacity: 0.3;
+}
+
+@media (max-width: 1000px) {
+  .projects_flex > a {
+    width: 100%;
+  }
+}
+@media (max-width: 700px) {
+  .projects_flex > a {
+    padding: 0px 20px;
+  }
+  .projects_flex > a p {
+    padding: 10px 0px;
+  }
+  .projects_flex > a > p {
+    padding-right: 10px;
+  }
+}

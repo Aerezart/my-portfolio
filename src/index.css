@@ -1,0 +1,353 @@
+
+:root{
+  --box-shadow-btns: 0 0 10px rgba(0, 0, 0, 0.345);
+  --box-shadow-inner-blocks: inset 0 0 10px rgba(0, 0, 0, 0.345);
+
+  --main-color:#1E1E1E;
+  --main-color-light:#ECE4FF;
+  --string:#CE816B;
+  --secondary-color:#9971FF;
+  --grey:#777777;
+
+  
+  --border-radius:25px;
+  --border-radius-tablet:15px;
+  --border-radius-mobile:15px;
+
+  --border-radius-inner:19px;
+  --border-radius-tablet-inner:15px;
+  --border-radius-mobile-inner:10px;
+
+  --border-radius-btn:15px;
+  --border-radius-btn-tablet:10px;
+  --border-radius-btn-mobile:9px;
+
+  --default-card-margin-top-bottom:30px;
+  --default-card-padding:15px;
+
+  --big-font-size:50px;
+  --big-font-size-tablet:39px;
+  --big-font-size-mobile:30px;
+
+  --h1-font-size:47px;
+  --h1-font-size-tablet:38px;
+  --h1-font-size-mobile:33px;
+
+  --h2-font-size:50px;
+  --h2-font-size-tablet:30px;
+  --h2-font-size-mobile:25px;
+
+  --h3-font-size:27px;
+  --h3-font-size-tablet:20px;
+  --h3-font-size-mobile:18px;
+
+  --p-font-size:17px;
+  --p-font-size-tablet:15px;
+  --p-font-size-mobile:13px;
+
+  --inner-content-padding:3em;
+  --inner-content-padding-tablet:3em;
+  --inner-content-padding-mobile:1em;
+
+  --inner-block-padding:15px;
+  --inner-block-padding-tablet:10px;
+  --inner-block-padding-mobile:8px;
+  
+}
+
+
+/* HTML5 display-role reset for older browsers */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+}
+button{
+	border: 0;
+}
+
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+html, body {
+	line-height: 1;
+  height: 100%;
+  width: 100%;
+
+}
+
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+body *{
+	font-family: 'Source Code Pro', monospace;
+
+}
+a, a:hover, a:active{
+  color:inherit;
+  text-decoration: none;
+}
+*, *::before, *::after{
+	box-sizing: border-box;
+
+}
+img, picture, video{
+	display: block;
+	max-width: 100%;
+}
+input, textarea, button, select{
+	font:inherit;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+body{
+  background-color: var(--main-color);
+}
+
+
+
+
+
+
+h1, h2, h3, h4{
+	margin-bottom: 30px;
+}
+.big-font{
+	font-size: var(--big-font-size);
+	font-weight: 600;
+}
+h1, .h1, .h1{
+	font-weight: 600;
+	font-size: var(--h1-font-size);
+}
+h2, .h2, .h2{
+	font-weight: 600;
+	font-size: var(--h2-font-size);
+}
+h3, .h3, .h3{
+	font-weight: 600;
+	font-size: var(--h3-font-size);
+}
+p, p *{
+	line-height: 24px;
+}
+p, a, label{
+	font-size: var(--p-font-size);
+	
+}
+button{
+	font-size: var(--p-font-size);
+}
+nav *{
+	transition: 0.3s;
+}
+*{
+	color:white;
+}
+span{
+	color:var(--secondary-color);
+	font-weight: 700;
+}
+.secondary-color{
+	color:var(--secondary-color);
+}
+
+.spacer{
+	width: 100%;
+	height: 50px;
+}
+.comment{
+	font-weight: 300;
+	font-style: italic;
+	color:var(--grey)
+}
+.string{
+	color:var(--string)
+}
+
+
+
+
+
+/*FLEXBOX*/
+.flexbox-cont{
+display: flex;
+flex-wrap: wrap;
+align-items: center;
+}
+.flexbox-50{
+width: 50%;
+}
+
+.zero-margin{
+	margin: 0px !important;
+}
+.zero-padding{
+	padding: 0px !important;
+}
+.full-width-btn{
+	width: 100%;
+}
+.flexbox-cont{
+  display: flex;
+  flex-wrap: wrap;
+	flex-direction: row-reverse;
+	justify-content: space-between;
+	align-items: center;
+}
+.flexbox-cont>div{
+    width: calc(50%);
+}
+
+
+@media(max-width:1100px){
+    .flexbox-cont>div{
+        width: 100%;
+    }
+    .flexbox-cont>div:nth-child(1){
+        margin-right: 0px;
+    }
+    .flexbox-cont>div:nth-child(2){
+        margin-left: 0px;
+    }
+}
+
+
+
+.border--radius{
+	border-radius: var(--border-radius);
+}
+.border--radius-inner{
+	border-radius: var(--border-radius-inner);
+}
+.border--radius-btn{
+	border-radius:var(--border-radius-btn);
+}
+.card--margin{
+	margin: var(--default-card-margin-top-bottom) 0px var(--default-card-margin-top-bottom) 0px;
+}
+.card--padding{
+	padding: var(--default-card-padding) ;
+}
+
+
+.border--radius-inner{
+	border-radius: var(--border-radius-inner);
+}
+.inner-content-padding{
+	margin: var(--inner-content-padding);
+}
+.inner-content-padding p{
+margin-bottom: 20px;
+}
+.inner_block_padding{
+	padding: var(--inner-block-padding);
+}
+
+@media(max-width:1000px){
+	h1, .h1{
+		font-size: var(--h1-font-size-tablet);
+	}
+	h2, .h2{
+		font-size: var(--h2-font-size-tablet);
+	}
+	h3, .h3{
+		font-weight: 600;
+		font-size: var(--h3-font-size-tablet);
+	}
+	p, a{
+		font-size: var(--p-font-size-tablet);
+	}
+	.border--radius{
+		border-radius: var(--border-radius-tablet);
+	}
+	.border--radius-inner{
+		border-radius: var(--border-radius-tablet-inner);
+	}
+	.border--radius-btn{
+		border-radius:var(--border-radius-btn-tablet);
+	}
+	.inner-content-padding{
+		margin: var(--inner-content-padding-tablet);
+	}
+	.inner_block_padding{
+		padding: var(--inner-block-padding-tablet);
+	}
+	h1, h2, h3{
+		margin-bottom: 20px;
+	}
+}
+@media(max-width:700px){
+	
+	h1, .h1{
+		font-size: var(--h1-font-size-mobile);
+	}
+	h2, .h2{
+		font-size: var(--h2-font-size-mobile);
+	}
+	h3, .h3{
+		font-weight: 600;
+		font-size: var(--h3-font-size-mobile);
+	}
+	p, a{
+		font-size: var(--p-font-size-mobile);
+	}
+	.border--radius{
+		border-radius: var(--border-radius-mobile);
+	}
+	.border--radius-inner{
+		border-radius: var(--border-radius-mobile-inner);
+	}
+	.border--radius-btn{
+		border-radius:var(--border-radius-btn-mobile);
+	}
+	.inner-content-padding{
+		margin: var(--inner-content-padding-mobile);
+	}
+	.inner_block_padding{
+		padding: var(--inner-block-padding-mobile);
+	}
+	.card--margin{
+		margin: 10px 0px 10px 0px;
+	}
+	h1, h2, h3{
+		margin-bottom: 15px;
+	}
+	.spacer{
+		width: 100%;
+		height: 30px;
+	}
+}
+
+
+
+

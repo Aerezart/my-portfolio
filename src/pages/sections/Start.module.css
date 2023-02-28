@@ -1,0 +1,18 @@
+.start {
+  display: flex;
+  justify-content: flex-end;
+}
+.start_inner {
+  max-width: 40%;
+}
+
+@media (max-width: 900px) {
+  .start {
+    padding-top: 7em;
+    display: flex;
+    justify-content: flex-end;
+  }
+  .start_inner {
+    max-width: 100%;
+  }
+}

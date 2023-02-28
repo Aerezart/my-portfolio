@@ -1,0 +1,72 @@
+.cont {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+  padding: 0px 15px;
+  width: max-content;
+  margin: 20px 20px;
+  height: 60px;
+  border: 1px solid var(--grey);
+}
+.social > * {
+  font-size: 25px;
+}
+.cv {
+  border: 1px solid var(--grey);
+  border-radius: 10px;
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0), 0 0 10px rgba(0, 0, 0, 0.8);
+  background-color: #683fd0;
+  height: 60px;
+  width: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 20px;
+  transition: 0.3s;
+}
+.cv:hover {
+  box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.3), 0 0 10px rgba(0, 0, 0, 0.8);
+}
+.cv p {
+  margin: 0px 10px 0px 0px;
+  font-size: 20px;
+}
+.cv:hover svg {
+  animation: download 0.3s;
+}
+@keyframes download {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(5px);
+  }
+  80% {
+    transform: translateY(-3px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+.cv svg {
+  font-size: 29px;
+}
+.cv svg {
+}
+.social a * {
+  transition: 0.3s;
+}
+.social a:hover * {
+  color: var(--secondary-color) !important;
+}
+.social > *:nth-child(2) {
+  margin: 0px 25px;
+}

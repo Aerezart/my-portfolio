@@ -1,0 +1,20 @@
+.section {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  scroll-snap-align: start;
+  z-index: 10;
+  position: relative;
+  min-height: 100vh;
+}
+
+@media (max-width: 900px) {
+  .section {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+  }
+}
