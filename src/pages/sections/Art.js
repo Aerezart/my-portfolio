@@ -1,7 +1,7 @@
 import Card from "../../UI/Card";
 import classes from "./Art.module.css";
 import art1 from "../../images/art1.jpg";
-import art2 from "../../images/art2.png";
+import art2 from "../../images/art2.jpg";
 import art3 from "../../images/art3.jpg";
 import Title from "../../UI/Title";
 import { useSelector } from "react-redux";

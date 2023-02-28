@@ -1,7 +1,7 @@
 import Slider from "react-slick";
 import "./Slider.css";
 import art1 from "../../images/art1.jpg";
-import art2 from "../../images/art2.png";
+import art2 from "../../images/art2.jpg";
 import art3 from "../../images/art3.jpg";
 
 const ArtSlider = (props) => {
