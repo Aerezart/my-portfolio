@@ -4,6 +4,7 @@ import { BsLinkedin } from "react-icons/bs";
 import { BsInstagram } from "react-icons/bs";
 import { BsGithub } from "react-icons/bs";
 import { IoCodeDownloadSharp } from "react-icons/io5";
+import cv from '../CV/cv.pdf'
 
 const SocialMedia = () => {
   return (
@@ -19,7 +20,7 @@ const SocialMedia = () => {
           <BsGithub />
         </a>
       </div>
-      <a href="https://github.com/Aerezart" className={classes.cv}>
+      <a href={cv} target="_blank" className={classes.cv}>
         <p>CV</p>
         <IoCodeDownloadSharp />
       </a>

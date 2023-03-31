@@ -22,7 +22,6 @@ const AboutMe = () => {
           </p>
           <SocialMedia />
         </div>
-        <div></div>
       </div>
     </Card>
   );
