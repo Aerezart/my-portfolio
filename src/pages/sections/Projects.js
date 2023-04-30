@@ -1,7 +1,6 @@
 import Card from "../../UI/Card";
 import classes from "./Projects.module.css";
 import Title from "../../UI/Title";
-import Spacer from "../../UI/Spacer";
 
 const Projects = () => {
   return (
@@ -14,10 +13,10 @@ const Projects = () => {
             <p>treasure-hunt-game</p>
           </div>
         </a>
-        <a href="https://adamietz.pl/" target="_blank" rel="noreferrer"  className={`${classes.project} ${classes.disabled}`}>
-          <p>https://</p>
+        <a href="http://quizzy-fy.com/" target="_blank" rel="noreferrer"  className={`${classes.project} ${classes.disabled}`}>
+          <p>http://</p>
           <div>
-            <p>quizyfy.com (in development)</p>
+            <p>quizzy-fy</p>
           </div>
         </a>
       </div>
