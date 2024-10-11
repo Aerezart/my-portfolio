@@ -61,7 +61,7 @@ nav > button {
 
 @media (max-width: 600px) {
     nav > button{
-        bottom: -29px;
+        bottom: -28px;
     }
     .nav {
         background-color: #683FD0;

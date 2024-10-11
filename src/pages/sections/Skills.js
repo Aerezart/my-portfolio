@@ -64,7 +64,7 @@ const Skills = () => {
       <Title functionLeft={"::("} functionRight={")"}>Experience</Title>
 
       <h3 className={classes.time_in_dev}>
-        const <span>timeInDevelopment</span> ={" "}
+        var <span>timeInDevelopment</span> ={" "}
         <span className="string">'{yeartinDev}y'</span> + <span className="string">'{monthstinDev}m'</span>
       </h3>
     </Card>
